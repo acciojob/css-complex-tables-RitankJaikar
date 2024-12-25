@@ -1,1 +1,35 @@
 /*  your css code here. If applicable */
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid orange;
+}
+
+/* Header cells */
+thead th {
+  background-color: #888888;
+  color: white;
+  text-align: center;
+  border: 1px solid orange;
+  padding: 3px 5px;
+}
+
+/* Data cells */
+tbody td {
+  text-align: center;
+  border: 1px solid orange;
+  padding: 3px 5px;
+}
+
+/* Subtotal row styling */
+.sub-total-row .sub-total-text {
+  text-align: right;
+  font-weight: bold;
+}
+
+/* Subtotal row general styling */
+.sub-total-row td {
+  background-color: #f9f9f9;
+  font-weight: bold;
+}

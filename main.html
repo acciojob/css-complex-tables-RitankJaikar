@@ -3,39 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Table with Rowspan and Colspan</title>
-  <style>
-    /* Styling the table */
-    table {
-      border-collapse: collapse;
-      width: 100%;
-    }
-
-    /* Styling the table header */
-    th {
-      background-color: #888888;
-      color: white;
-      text-align: center;
-      border: 1px solid orange;
-      padding: 3px 5px;
-    }
-
-    /* Styling table data cells */
-    td {
-      text-align: center;
-      border: 1px solid orange;
-      padding: 3px 5px;
-    }
-
-    /* Sub-total text cell */
-    .sub-total-text {
-      text-align: right;
-    }
-  </style>
+  <title>Table with Rowspan and Styling</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <table>
-    <!-- Table Header -->
     <thead>
       <tr>
         <th>Firm</th>
@@ -46,9 +18,8 @@
         <th>Business Components</th>
       </tr>
     </thead>
-    <!-- Table Body -->
     <tbody>
-      <!-- First row -->
+      <!-- First 5 rows -->
       <tr>
         <td rowspan="11">XYZ</td>
         <td rowspan="5">CST</td>
@@ -58,65 +29,62 @@
         <td>10</td>
       </tr>
       <tr>
-        <td>RND</td>
+        <td>ADS</td>
         <td>2</td>
-        <td>8</td>
+        <td>20</td>
       </tr>
       <tr>
-        <td>DEV</td>
+        <td>ADS</td>
         <td>3</td>
-        <td>12</td>
+        <td>30</td>
       </tr>
       <tr>
-        <td rowspan="2">IT</td>
-        <td>OPS</td>
-        <td>2</td>
-        <td>7</td>
+        <td rowspan="2">ADS</td>
+        <td>4</td>
+        <td>40</td>
       </tr>
       <tr>
-        <td>SUP</td>
-        <td>3</td>
-        <td>6</td>
+        <td>5</td>
+        <td>50</td>
       </tr>
-      <!-- Sub-total row -->
-      <tr>
+
+      <!-- Subtotal row -->
+      <tr class="sub-total-row">
         <td class="sub-total-text" colspan="3">Sub Total</td>
         <td>6</td>
         <td>15</td>
       </tr>
+
+      <!-- Remaining rows -->
       <tr>
-        <td rowspan="6">GST</td>
+        <td rowspan="6">MT</td>
         <td rowspan="3">BT</td>
-        <td>MARK</td>
-        <td>1</td>
-        <td>5</td>
+        <td>OPR</td>
+        <td>7</td>
+        <td>70</td>
       </tr>
       <tr>
-        <td>STRAT</td>
-        <td>2</td>
+        <td>OPR</td>
+        <td>8</td>
+        <td>80</td>
+      </tr>
+      <tr>
+        <td>OPR</td>
         <td>9</td>
+        <td>90</td>
       </tr>
       <tr>
-        <td>SALES</td>
-        <td>1</td>
-        <td>4</td>
-      </tr>
-      <tr>
-        <td rowspan="3">MT</td>
-        <td>FIN</td>
-        <td>2</td>
-        <td>6</td>
-      </tr>
-      <tr>
-        <td>HR</td>
-        <td>1</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>ADMIN</td>
-        <td>3</td>
+        <td rowspan="3">OPR</td>
         <td>10</td>
-		<td>12</td>
+        <td>100</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>110</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>120</td>
       </tr>
     </tbody>
   </table>
