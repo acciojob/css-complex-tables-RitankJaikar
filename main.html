@@ -1,16 +1,123 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table with Rowspan and Colspan</title>
+  <style>
+    /* Styling the table */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    /* Styling the table header */
+    th {
+      background-color: #888888;
+      color: white;
+      text-align: center;
+      border: 1px solid orange;
+      padding: 3px 5px;
+    }
+
+    /* Styling table data cells */
+    td {
+      text-align: center;
+      border: 1px solid orange;
+      padding: 3px 5px;
+    }
+
+    /* Sub-total text cell */
+    .sub-total-text {
+      text-align: right;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <table>
+    <!-- Table Header -->
+    <thead>
+      <tr>
+        <th>Firm</th>
+        <th>Org</th>
+        <th>Lob</th>
+        <th>Sub Lob</th>
+        <th>Business Plans</th>
+        <th>Business Components</th>
+      </tr>
+    </thead>
+    <!-- Table Body -->
+    <tbody>
+      <!-- First row -->
+      <tr>
+        <td rowspan="11">XYZ</td>
+        <td rowspan="5">CST</td>
+        <td rowspan="3">CT</td>
+        <td>ADS</td>
+        <td>1</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>RND</td>
+        <td>2</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>DEV</td>
+        <td>3</td>
+        <td>12</td>
+      </tr>
+      <tr>
+        <td rowspan="2">IT</td>
+        <td>OPS</td>
+        <td>2</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>SUP</td>
+        <td>3</td>
+        <td>6</td>
+      </tr>
+      <!-- Sub-total row -->
+      <tr>
+        <td class="sub-total-text" colspan="3">Sub Total</td>
+        <td>6</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td rowspan="6">GST</td>
+        <td rowspan="3">BT</td>
+        <td>MARK</td>
+        <td>1</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>STRAT</td>
+        <td>2</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td>SALES</td>
+        <td>1</td>
+        <td>4</td>
+      </tr>
+      <tr>
+        <td rowspan="3">MT</td>
+        <td>FIN</td>
+        <td>2</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>HR</td>
+        <td>1</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <td>ADMIN</td>
+        <td>3</td>
+        <td>10</td>
+      </tr>
+    </tbody>
+  </table>
 </body>
-
 </html>
